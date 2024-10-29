@@ -1,0 +1,15 @@
+server:
+  port: 50443
+  ssl:
+    enabled: true
+    #key-store: "C:\\certificate\\server-keystore.p12"
+    key-store: "C:\\certificates\\srv-keystore.p12"
+    key-store-password: "secret"
+    key-store-type: "PKCS12"
+    client-auth: need
+    #trust-store: "C:\\certificate\\server-truststore.p12"
+    trust-store: "C:\\certificates\\srv-truststore.jks"
+    trust-store-password: "secret"
+    trust-store-type: "PKCS12"
+    protocol: "TLS"
+    enabled-protocols: TLSv1.2, TLSv1.3
